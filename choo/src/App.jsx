@@ -15,10 +15,10 @@ function App() {
     <>
       <Navbar/>
       <Routes>
-        <Route path='/' element={<About />}/>
-        <Route path='/resume' element={<Resume />}/>
-        <Route path='/sampleworks' element={<Sample />}/>
-        <Route path='/references' element={<References />}/>
+        <Route path='/choowa-ee/' element={<About />}/>
+        <Route path='/choowa-ee/resume' element={<Resume />}/>
+        <Route path='/choowa-ee/sampleworks' element={<Sample />}/>
+        <Route path='/choowa-ee/references' element={<References />}/>
       </Routes>
     </>
   )
