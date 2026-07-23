@@ -1,14 +1,14 @@
-import {Link} from "react-router-dom";
+import {Link, NavLink} from "react-router-dom";
 
 export default function Navbar() {
     return(
         <nav className='nav'>
             <Link to='/choowa-ee/'>My site :)</Link>
             <ul>
-                <li><Link to='/choowa-ee/'>About</Link></li>
-                <li><Link to="/choowa-ee/resume">Resume</Link></li>
-                <li><Link to="/choowa-ee/sampleworks">Sample work</Link></li> 
-                <li><Link to="/choowa-ee/references">References</Link></li>
+                <li><NavLink to='/choowa-ee/' end>About</NavLink></li>
+                <li><NavLink to="/choowa-ee/resume">Resume</NavLink></li>
+                <li><NavLink to="/choowa-ee/sampleworks">Sample work</NavLink></li> 
+                <li><NavLink to="/choowa-ee/references">References</NavLink></li>
             </ul>
         </nav>
     )
