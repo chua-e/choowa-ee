@@ -7,7 +7,7 @@ export default function About() {
                 <img src={gif} alt="mmmm samwich..." height='150px'/>
             </div>
             <div id='details'>
-                <h2 id='name'>Erin Chua</h2>
+                <h2 id='name'>Erin Gabrielle T. Chua</h2>
                 <div id='contact'>
                     <a href='mailto:chua.erin.g@gmail.com' target="_blank">
                         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" className="bi bi-envelope" viewBox="0 0 16 16">
@@ -28,8 +28,10 @@ export default function About() {
                     </a>
                 </div>
                 <p id='description'>
-                    3rd year computer science undergraduate currently studying at
-                    De La Salle University. i like shapes and colors.
+                    Computer Science undergraduate at De La Salle University specializing in Software Technology with an interest 
+                    focused on Natural Language Processing and Machine Learning, with 3+ semesters of hands-on experience shipping 
+                    production features as a full-stack developer, plus applied NLP project work spanning rule-based systems and deep 
+                    learning models. 
                 </p>
             </div>
         </div>

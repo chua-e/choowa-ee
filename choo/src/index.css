@@ -21,6 +21,9 @@
   --weight-heading: 700;
   --weight-mono: 300;
 
+  --grid-minor: rgba(229, 228, 231, 0.05); 
+  --grid-major: rgba(229, 228, 231, 0.10);
+
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
   color-scheme: light dark;
@@ -38,6 +41,21 @@
 
 body {
   margin: 0;
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(to right, var(--grid-minor) 1px, transparent 1px),
+    linear-gradient(to bottom, var(--grid-minor) 1px, transparent 1px),
+
+    linear-gradient(to right, var(--grid-major) 1.5px, transparent 1.5px),
+    linear-gradient(to bottom, var(--grid-major) 1.5px, transparent 1.5px);
+
+  background-size: 
+    20px 20px,
+    20px 20px,
+    100px 100px,
+    100px 100px;
+
+  background-attachment: fixed;
 }
 
 #root {
@@ -86,7 +104,7 @@ p {
   justify-content: space-between;
   align-items: stretch;
   gap: 2rem;
-  padding: 2rem;
+  padding: 2rem 3rem;
 }
 
 .nav ul {
@@ -105,8 +123,7 @@ p {
 }
 
 .nav a:hover {
-  background-color: #e5e4e790;
-  color:#053e2f;
+  color:#e5e4e7;
 }
 
 .nav a.active {
@@ -121,9 +138,19 @@ p {
 
 .profile {
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 4rem;
+}
+
+.profile p {
+  color: var(--text-h);
+  font-weight: 200;
+}
+
+.profile svg {
+  color: var(--text);
 }
 
 .profile #details {
@@ -135,32 +162,50 @@ p {
 }
 
 .resume {
-  display: grid;
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   width: 100%;
-  max-width: 100%;
-  gap: 1rem;
+  padding: 2rem 1rem;
+  gap: 1.5rem;
+  box-sizing: border-box;
 }
 
 .resume button {
-  display: flex;
+  display: inline-flex;
+  align-items: center;
   justify-content: center;
-  justify-items: center;
   font-family: var(--heading);
-  background-color: #e5e4e7;
+  font-weight: 500;
+  font-size: large;
+  background-color: #f3f4f6;
+  border:none;
   border-radius: 10px;
   color :#053e2f;
-  outline: none;
-  box-shadow: none;
-  padding: 1rem;
-  gap: 1rem;
+  padding: 0.75rem 1.5rem;
+  gap: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+.resume button:hover {
+  background-color: #e5e4e7;
 }
 
 .reume button:focus {
-    outline: none;
+  outline: none;
+}
+
+.iframe-container {
+  width: 90%;
+  max-width: 900px;
+  height: 80vh;
+  min-height: 600px;
 }
 
 .resume iframe {
+  width: 100%;
+  height: 100%;
   border-radius: 10px;
+  border: none;
 }
