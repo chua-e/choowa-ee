@@ -28,10 +28,9 @@ export default function About() {
                     </a>
                 </div>
                 <p id='description'>
-                    Computer Science undergraduate at De La Salle University specializing in Software Technology with an interest 
-                    focused on Natural Language Processing and Machine Learning, with 3+ semesters of hands-on experience shipping 
-                    production features as a full-stack developer, plus applied NLP project work spanning rule-based systems and deep 
-                    learning models. 
+                    Hello! I'm Erin, and I am currently a 3rd year computer science undergraduate at De La Salle University.
+                    My current degree specializes in software technology, and I have an interest focused in natural language processing and
+                    machine learning. I also enjoy doing creative work (sometimes) through graphic design and illustration.
                 </p>
             </div>
         </div>

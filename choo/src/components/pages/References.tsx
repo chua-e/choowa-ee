@@ -3,9 +3,7 @@ export default function References() {
         <>
         <div>
             <h2>References</h2>
-            <ul>
-                <li>some person</li>
-            </ul>
+            <p>none</p>
         </div>
         </>
     )
